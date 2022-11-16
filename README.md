@@ -5,12 +5,12 @@ This is the proposal of our ADA project, in which we are working on the Wikispee
 
 This proposal follows the roadmap below:
 * [Abstract](#Abstract)
-* [Research Questions](#Research_Questions))
-* [Methods](#Methods))
-* [Proposed Timeline](#References))
-* [Internal Milestones](#References))
-* [Libraries and Implementation](#References))
-* [Related Work](#References))
+* [Research Questions](#Research-Questions)
+* [Methods](#Methods)
+* [Proposed Timeline](#Proposed-Timeline)
+* [Internal Milestones](#Internal-Milestones)
+* [Libraries and Implementation](#Libraries-and-Implementation)
+* [Related Work](#Related-Work)
 * [References](#References))
 
 
