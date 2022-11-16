@@ -11,7 +11,7 @@ This proposal follows the roadmap below:
 * [Internal Milestones](#Internal-Milestones)
 * [Libraries and Implementation](#Libraries-and-Implementation)
 * [Related Work](#Related-Work)
-* [References](#References))
+* [References](#References)
 
 
 ## Abstract 
@@ -32,7 +32,7 @@ TODO
 ## Proposed Timeline
 * Step 1. Enrich our initial analysis with more insights (using Pandas, Matplotlib, Numpy and NetworkX)
     * Proposed deadline: 
-* Step 2. Create a family of functions to be able to get the positions of the links in the article (using Pandas and Beatidul Soup). 
+* Step 2. Create a family of functions to be able to get the positions of the links in the article (using Pandas and BeatifulSoup). 
     * Proposed deadline: 
 * Step 3. 
     * Proposed deadline: 
