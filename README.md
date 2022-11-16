@@ -14,9 +14,8 @@ This proposal follows the roadmap below:
 * [References](#References))
 
 
-
 ## Abstract 
-The Wikispeedia dataset is a rich source of information on how users are browing Wikipedia pages, in order to reach a target article from a given, initial one. Given this rich source of "common sense" information, we plan to study how the position of the links in the HTML page affects the user decision. 
+The Wikispeedia dataset is a rich source of information on how users are browing Wikipedia pages, in order to reach a target article from a given, initial one. Using this rich source of "common sense" information, we plan to study how the position of the links in the HTML page affects the user decision, in order to gain insight on how the users tend to examine a given article, in order to proceed to the a following one. Our novelty lies in the fact that, although visual link analysis has been studied in the corresponding literature, we will combine the common sense data and study how the users traverse pages when browsing in Wikipedia when they have a goal to reach a final article, instead of "free" browsing a website. We want to study how the position of such links affects the users decision, the section of the page where the most followed links belong, combine our methods with graph analytics tasks to see if those links are also important in terms of graph analytics and compare our findings with the corresponding available research in this direction.
 
 
 ## Research Questions
@@ -63,3 +62,4 @@ There has been related projects about studying the HTML structure (see [Referenc
 * Dimitrov, Dimitar, et al. "Visual positions of links and clicks on wikipedia." Proceedings of the 25th International Conference Companion on World Wide Web. 2016.
 * Dimitrov, Dimitar, et al. "What makes a link successful on wikipedia?." Proceedings of the 26th International Conference on World Wide Web. 2017.
 * West, Robert, Joelle Pineau, and Doina Precup. "Wikispeedia: An online game for inferring semantic distances between concepts." Twenty-First International Joint Conference on Artificial Intelligence. 2009.
+* Leskovec, Jure. "Human wayfinding in information networks." In WWW-12. 2012.
