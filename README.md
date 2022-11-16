@@ -3,19 +3,37 @@ This is the proposal of our ADA project, in which we are working on the Wikispee
 - This README as our official project proposal
 - The initial_analysis.ipynb which contains some initial analysis steps for the dataset.
 
+
 ## Abstract 
+The Wikispeedia dataset is a rich source of information on how users are browing Wikipedia pages, in order to reach a target article from a given, initial one. Given this rich source of "common sense" information, we plan to study how the position of the links in the HTML page affects the user decision. 
 
 
 ## Research Questions
+- Is the position of a link in a Wikipedia page affects the decision of the user?
+- In which sections of the page are the most clicked links?
+- Do graph analytics insights (e.g. popular links) affect the user decision, no matter their position?
+- How do this analysis, based on people "common sense" compares to results of general analysis in visual link predictions of Wikipedia, already implemented in literature?
 
 
 ## Methods
+TODO
 
 
 ## Proposed Timeline
+* Step 1. Enrich our initial analysis with more insights (using Pandas, Matplotlib, Numpy and NetworkX)
+    * Proposed deadline: 
+* Step 2. Create a family of functions to be able to get the positions of the links in the article (using Pandas and Beatidul Soup). 
+    * Proposed deadline: 
+* Step 3. 
+    * Proposed deadline: 
+* Step 4. Explore the literature in order to compare the results of our analysis to other research outcomes in this direction.
+    * Proposed deadline: 
+* Step 5. Gather our research results, filter the most interesting and start preparing the presentation-report-datastory.
+    * Proposed deadline: 
 
 
 ## Internal Milestones
+
 
 
 ## Libraries and Implementation
@@ -32,3 +50,5 @@ There has been related projects about studying the HTML structure (see [Referenc
 
 ## Refenerces
 * Dimitrov, Dimitar, et al. "Visual positions of links and clicks on wikipedia." Proceedings of the 25th International Conference Companion on World Wide Web. 2016.
+* Dimitrov, Dimitar, et al. "What makes a link successful on wikipedia?." Proceedings of the 26th International Conference on World Wide Web. 2017.
+* West, Robert, Joelle Pineau, and Doina Precup. "Wikispeedia: An online game for inferring semantic distances between concepts." Twenty-First International Joint Conference on Artificial Intelligence. 2009.
