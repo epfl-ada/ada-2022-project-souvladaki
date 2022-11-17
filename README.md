@@ -22,15 +22,15 @@ This proposal follows the roadmap below:
 
 
 ## Abstract 
-
-Wikispeedia provides a rich source of information about user navigation over Wikipedia pages, when they are given the task of reaching a target article starting from a given one. A crucial aspect of this procedure is what links the users follow when they are navigating over a page, in order to reach the final target. Through this project we plan to study how the position of the links in the page affects the decision of the user, in order to understand how important is the location of the URL in the page. We will examine in which paragraphs or section of a Wikipedia article the most followed links are, and determine how their positions affect the behavior of the player. Additionaly, we will compare our findings with results from general visual link analysis over Wikipeedia, already implemented in literature, and explore if our results are compatible with graph analytics insights (e.g. if the popular links from Wikipedia belong to the most clicked positions of the page). 
+Wikispeedia provides a rich source of information about user navigation over Wikipedia pages, when they are given the task of reaching a target article starting from a given one. A crucial aspect of this procedure is what links the users follow when they are navigating over a page, in order to reach the final target. Through this project we plan to study how the position of the links in the page affects the user decision, in order to understand how important is the location of the URL in the page. We will examine in which paragraphs or section of a Wikipedia article the most followed links are, and determine how their positions affect the behavior of the player. Additionaly, we will compare our findings with results from general visual link analysis over Wikipeedia, already implemented in literature, and explore if our results are compatible with graph analytics insights (e.g. if the popular links from Wikipedia belong to the most clicked positions of the page). We plan to focus our datastory on the importance of the position of a link in a page, and provide insight on how it affects the user behavior.
 
 
 ## Research Questions
-- Is the position of a link in a Wikipedia page affects the decision of the user?
-- In which sections of the page are the most clicked links?
-- Do graph analytics insights (e.g. popular links) affect the user decision, no matter their position?
-- How do this analysis, based on people "common sense" compares to results of general analysis in visual link predictions of Wikipedia, already implemented in literature?
+Below you may find our initial research questions that we will explore throughout our project.
+- How does the position of links in the HTML page of Wikipedia affects the user behavior?
+- Are there specific sections that their links are generally preffered? 
+- Are the results of visual link analysis on Wikispeedia (which is based on common sense) similar or different with the ones already observed in the literature? 
+- How are our results on visual link analysis compared to graph analytics over our data? Are the links that belong to the most "clicked" sections of the page also important in terms of graph analysis? 
 
 
 ## Methods
@@ -38,7 +38,8 @@ TODO
 
 
 ## Proposed Timeline
-* Step 1. Enrich our initial analysis with more insights (using Pandas, Matplotlib, Numpy, BeatifulSoup and NetworkX)
+Here, we propose an indicative timeline that we will follow through the project.
+* P-M1. Enrich our initial analysis with more insights (using Pandas, Matplotlib, Numpy, BeatifulSoup and NetworkX)
     * Proposed deadline: Milestone P2 deadline, 18/11/2022
 * Step 2. Create a family of functions to be able to get the positions of the links in the article (using Pandas and BeatifulSoup) and start making initial steps towards this direction. 
     * Proposed deadline: 
@@ -50,7 +51,7 @@ TODO
     * Proposed deadline: Milestone P3 deadline, 23/12/2022.
 
 
-## Internal Milestones
+## Internal Organization
 
 
 
