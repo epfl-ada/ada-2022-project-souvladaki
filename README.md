@@ -1,4 +1,5 @@
-# Common sense on Wikipedia links position
+# Does the position of Wikipedia links affect user behavior?
+Exploring Wikipedia links position exploiting user common sense.
 
 Henri Allegre (henri.allegre@epfl.ch), Ioannis Bantzis (ioannis.bantzis@epfl.ch), Emmanouil Chatzakis (emmanouil.chatzakis@epfl.ch), Basile Tornare (basile.tornare@epfl.ch)
 
@@ -39,16 +40,14 @@ TODO
 
 ## Proposed Timeline
 Here, we propose an indicative timeline that we will follow through the project.
-* P-M1. Enrich our initial analysis with more insights (using Pandas, Matplotlib, Numpy, BeatifulSoup and NetworkX)
-    * Proposed deadline: Milestone P2 deadline, 18/11/2022
-* Step 2. Create a family of functions to be able to get the positions of the links in the article (using Pandas and BeatifulSoup) and start making initial steps towards this direction. 
-    * Proposed deadline: 
-* Step 3. 
+* P-M1 [Preprocessing]. Enrich our initial analysis with more insights. Study the graph structure, analyze the available data and gain an initial processing about the visual link analysis of the pages.
+    * Deadline: 18/11/2022 (Milestone P2 Deadline)
+* P-M2 [] . 
     * Proposed deadline: 
 * Step 4. Explore the literature in order to compare the results of our analysis to other research outcomes in this direction.
     * Proposed deadline: 
 * Step 5. Gather our research results, filter the most interesting and start preparing the presentation-report-datastory.
-    * Proposed deadline: Milestone P3 deadline, 23/12/2022.
+    * Proposed deadline: 23/12/2022 (Milestone P3 Deadline).
 
 
 ## Internal Organization
