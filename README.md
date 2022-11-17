@@ -1,8 +1,11 @@
 # Common sense on Wikipedia links position
 This is the proposal of our ADA project, in which we are working on the Wikispeedia dataset. For this milestone we provide:
 - This README as our official project proposal
-- The initial_analysis.ipynb which contains our initial analysis steps for the dataset. The notebook has methods both for gaining insight about the
-general structure of the data in Wikispeedia, and for processing the link position if articles.
+- The initial_analysis.ipynb which contains our initial analysis steps for the dataset. In the notebook you will find:
+    - Code for initial processing of the dataset, data loading and basic analysis
+    - Code for graph analytics and visualizations over the Wikispeedia graph
+    - Code for path analysis
+    - Preliminary code for our link position ideas.
 
 This proposal follows the roadmap below:
 * [Abstract](#Abstract)
