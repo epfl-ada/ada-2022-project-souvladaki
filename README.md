@@ -1,7 +1,8 @@
 # Common sense on Wikipedia links position
 This is the proposal of our ADA project, in which we are working on the Wikispeedia dataset. For this milestone we provide:
 - This README as our official project proposal
-- The initial_analysis.ipynb which contains some initial analysis steps for the dataset.
+- The initial_analysis.ipynb which contains our initial analysis steps for the dataset. The notebook has methods both for gaining insight about the
+general structure of the data in Wikispeedia, and for processing the link position if articles.
 
 This proposal follows the roadmap below:
 * [Abstract](#Abstract)
@@ -30,16 +31,16 @@ TODO
 
 
 ## Proposed Timeline
-* Step 1. Enrich our initial analysis with more insights (using Pandas, Matplotlib, Numpy and NetworkX)
-    * Proposed deadline: 
-* Step 2. Create a family of functions to be able to get the positions of the links in the article (using Pandas and BeatifulSoup). 
+* Step 1. Enrich our initial analysis with more insights (using Pandas, Matplotlib, Numpy, BeatifulSoup and NetworkX)
+    * Proposed deadline: Milestone P2 deadline, 18/11/2022
+* Step 2. Create a family of functions to be able to get the positions of the links in the article (using Pandas and BeatifulSoup) and start making initial steps towards this direction. 
     * Proposed deadline: 
 * Step 3. 
     * Proposed deadline: 
 * Step 4. Explore the literature in order to compare the results of our analysis to other research outcomes in this direction.
     * Proposed deadline: 
 * Step 5. Gather our research results, filter the most interesting and start preparing the presentation-report-datastory.
-    * Proposed deadline: 
+    * Proposed deadline: Milestone P3 deadline, 23/12/2022.
 
 
 ## Internal Milestones
