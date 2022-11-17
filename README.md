@@ -1,4 +1,7 @@
 # Common sense on Wikipedia links position
+
+Henri Allegre (henri.allegre@epfl.ch), Ioannis Bantzis (ioannis.bantzis@epfl.ch), Emmanouil Chatzakis (emmanouil.chatzakis@epfl.ch), Basile Tornare (basile.tornare@epfl.ch)
+
 This is the proposal of our ADA project, in which we are working on the Wikispeedia dataset. For this milestone we provide:
 - This README as our official project proposal
 - The initial_analysis.ipynb which contains our initial analysis steps for the dataset. In the notebook you will find:
@@ -19,7 +22,8 @@ This proposal follows the roadmap below:
 
 
 ## Abstract 
-The Wikispeedia dataset is a rich source of information on how users are browing Wikipedia pages, in order to reach a target article from a given, initial one. Using this rich source of "common sense" information, we plan to study how the position of the links in the HTML page affects the user decision, in order to gain insight on how the users tend to examine a given article, in order to proceed to the a following one. Our novelty lies in the fact that, although visual link analysis has been studied in the corresponding literature, we will combine the common sense data and study how the users traverse pages when browsing in Wikipedia when they have a goal to reach a final article, instead of "free" browsing a website. We want to study how the position of such links affects the users decision, the section of the page where the most followed links belong, combine our methods with graph analytics tasks to see if those links are also important in terms of graph analytics and compare our findings with the corresponding available research in this direction.
+
+Wikispeedia provides a rich source of information about user navigation over Wikipedia pages, when they are given the task of reaching a target article starting from a given one. A crucial aspect of this procedure is what links the users follow when they are navigating over a page, in order to reach the final target. Through this project we plan to study how the position of the links in the page affects the decision of the user, in order to understand how important is the location of the URL in the page. We will examine in which paragraphs or section of a Wikipedia article the most followed links are, and determine how their positions affect the behavior of the player. Additionaly, we will compare our findings with results from general visual link analysis over Wikipeedia, already implemented in literature, and explore if our results are compatible with graph analytics insights (e.g. if the popular links from Wikipedia belong to the most clicked positions of the page). 
 
 
 ## Research Questions
