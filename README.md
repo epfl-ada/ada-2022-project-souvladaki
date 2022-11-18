@@ -12,9 +12,9 @@ This is the proposal of our ADA project, in which we are working on the Wikispee
     - Preliminary code for our link position ideas.
 
 This proposal follows the roadmap below:
-* [Abstract](#Abstract-:closed_book:)
-* [Research Questions](###Research-Questions-:question:)
-* [Methods](#Methods-:dart:)
+* [Abstract](#abstract-closed_book)
+* [Research Questions](#research-questions-question)
+* [Methods](#methods-dart)
 * [Proposed Timeline](#Proposed-Timeline)
 * [Internal Milestones](#Internal-Milestones)
 * [Libraries and Implementation](#Libraries-and-Implementation)
