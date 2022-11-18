@@ -99,7 +99,7 @@ We are aware of the related work about studying the page structure of Wikipedia 
 * Dimitrov, Dimitar, et al. "What makes a link successful on wikipedia?." Proceedings of the 26th International Conference on World Wide Web. 2017.
 * West, Robert, Joelle Pineau, and Doina Precup. "Wikispeedia: An online game for inferring semantic distances between concepts." Twenty-First International Joint Conference on Artificial Intelligence. 2009.
 * Leskovec, Jure. "Human wayfinding in information networks." In WWW-12. 2012.
-
+* Daniel Lamprecht, Dimitar Dimitrov, Denis Helic, and Markus Strohmaier."Evaluating and Improving Navigability of Wikipedia: A Comparative Study of Eight Language Editions." 2016.
 
 ## Questions to the TAs :postbox:
 * Throughout our work we may encounter results that could provide more insights about our research questions. Can we (slightly) modify our proposal throughout the duration of the project.
