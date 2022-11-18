@@ -40,26 +40,34 @@ TODO
 
 ## Proposed Timeline
 Here, we propose an indicative timeline that we will follow through the project.
-* P-M1 [Preprocessing]. Enrich our initial analysis with more insights. Study the graph structure, analyze the available data and gain an initial processing about the visual link analysis of the pages.
-    * Deadline: 18/11/2022 (Milestone P2 Deadline)
-* P-M2 [] . 
+* P-M1 [Preprocessing]. Enrich initial analysis to get more insights.
+    * Date: 18/11/2022 (Milestone P2 Deadline)
+* P-M2 [API]. Delevop a family of functions and routines to ease the analysis of link position. 
+    * Date: 02/12/2022 (Along with homework 2, as the workload will be high in this period and we already provide some initial steps about his in our notebook)
+* P-M2 [Data Analysis]. Explore the literature in order to compare the results of our analysis to other research outcomes in this direction.
     * Proposed deadline: 
-* Step 4. Explore the literature in order to compare the results of our analysis to other research outcomes in this direction.
-    * Proposed deadline: 
-* Step 5. Gather our research results, filter the most interesting and start preparing the presentation-report-datastory.
-    * Proposed deadline: 23/12/2022 (Milestone P3 Deadline).
+* P-MX [Datastory Draft]. Start creating a template (sketch-like) for the datastory.
+    * Date: 13/12/2022 
+* P-MX [Final Results]. Gather all interesting reseach results, finalize datastory.
+    * Date: 23/12/2022 (Milestone P3 Deadline).
+
 
 
 ## Internal Organization
-
-
+Our team meets up to coordinate and syncronize, so that every member is aware of the different
+aspects of our project, but every teammate is assigned specific parts of the work.
+- Henri: Visualizations
+- Ioannis: Code maintenance, Visualizations
+- Manos: Code maintenance, Website, Datastory
+- Basile: Website, Visualizations, Datastory
+All members contributed to the initial analysis steps.
 
 ## Libraries and Implementation
-The project will be implemented in Python, using the following packages.
+The project will be implemented in Python, using the following (indicative) packages.
 * Pandas and Numpy: For data analysis
 * Matplotlib and Seaborn: For visualizations
 * Networkx: For graph analytics
-* BeatifulSoup: For HTML page analysis
+* BeatifulSoup: For HTML page analysis and link position
 
 
 ## Related Work
