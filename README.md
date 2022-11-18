@@ -12,9 +12,9 @@ This is the proposal of our ADA project, in which we are working on the Wikispee
     - Preliminary code for our link position ideas.
 
 This proposal follows the roadmap below:
-* [Abstract](#Abstract)
-* [Research Questions](#Research-Questions)
-* [Methods](#Methods)
+* [Abstract](#Abstract-:closed_book:)
+* [Research Questions](###Research-Questions-:question:)
+* [Methods](#Methods-:dart:)
 * [Proposed Timeline](#Proposed-Timeline)
 * [Internal Milestones](#Internal-Milestones)
 * [Libraries and Implementation](#Libraries-and-Implementation)
@@ -74,6 +74,7 @@ The project will be implemented in Python, using the following (indicative) pack
 
 ## Related Work :copyright:
 We are aware of the related work about studying the page structure of Wikipedia in order to determine the position of the links that users are most likely to follow (see [References](#References)). This work mainly consists of data gathered from users that "free browse" Wikipedia pages, without the aim of reaching a final target, and the users click on pages that they find interesting in general. We differ from this because our data come from users that click on pages that might lead them to their goal, exploiting their common sense about pages that are semantically similar to the final destination. This notion of semantic similairity between pages in not captured by previous work. An interesting aspect of our project would be to compare the existing results in the literature with our results, which will include the common sense knowledge from Wikispeedia. 
+
 
 ## References :coffee:
 * Dimitrov, Dimitar, et al. "Visual positions of links and clicks on wikipedia." Proceedings of the 25th International Conference Companion on World Wide Web. 2016.
