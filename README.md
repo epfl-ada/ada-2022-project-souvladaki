@@ -25,7 +25,7 @@ This proposal follows the roadmap below:
 * [Questions to the TAs](#questions-to-the-tas-postbox)
 
 ## Abstract :closed_book:
-Wikispeedia provides a rich source of information about user navigation over Wikipedia pages. Through Wikispeedia game, users are assigned the task to reach an article from an initial one, just by clicking the article links that may lead them to the final destination. A crucial aspect of this navigation is that the users click on links by thinking which of them are most semantically similar to their goal, using their common sense. In this work, we will study how the visual position of those links in a page affects the decision of the user, and how they impact the outcome of the game. We will provide insights about the positions of the most followed links and we will compare our findings with the user navigation knowledge that already exists in literature. We will create our datastory with emphasis on the statistical findings of the link position and human behavior and on the comparison of those results with the pre-existing knowledge in the field of user navigation. 
+Wikispeedia provides a rich source of information about user navigation over Wikipedia pages. In the Wikispeedia game, users are assigned the task of reaching a given target article from a given source article, exclusively by clicking the links that they encounter at each article. A crucial aspect of this navigation is that the users click on links by thinking which of them are the most semantically similar to their goal, using their common sense. In this work, we will study how the visual position of those links in a page affects the decision of the user, and how they impact the outcome of the game. We will provide insights about the positions of the most followed links and we will compare our findings with the user navigation knowledge that already exists in the literature. We will create our datastory with an emphasis on the statistical findings of the link position and human behavior and on the comparison of those results with the pre-existing knowledge in the field of user navigation. 
 
 *Keywords: Wikipedia, Wikispeedia, User Navigation, Visual Link Position, Graph Analytics*
 
@@ -33,7 +33,7 @@ Wikispeedia provides a rich source of information about user navigation over Wik
 ## Research Questions :question:
 Below you may find our initial research questions that we will explore throughout our project.
 - How does the position of links in the HTML page of Wikipedia affects the user behavior/selection?
-- Are there specific sections that their links are preferred from users when navigating the graph?
+- Are there specific sections in which their links are preferred by users when navigating the graph?
 - Are the results of visual link analysis on Wikispeedia (which is based on human behavior) similar or different with the ones already observed in the literature?
 - How our results on visual link analysis compare to analytics over the graph? Are the links that belong to the most "clicked" sections of the page also important in terms of graph analysis?
 
@@ -51,7 +51,7 @@ We experimented with a **wikipedia graph analysis** (using networkx):
   - We visualized the dense Wikispeedia network 
   - We simulated multiple graph analytics algorithms over the graph (Pagerank, Clustering Coef., Eigenvector Centrality)
 
-We contucted a **link position analysis** (using BeautifulSoup):
+We conducted a **link position analysis** (using BeautifulSoup):
 The visual location of the links in wikipedia articles has been used in the past to study reader preferences. We propose a conceptually simple approach by analysing the paragraph location of the links. The HTML source code of a wikipedia is composed of paragraph elements containing the link elements of the page. We use the paragraph number of the link as an aggregate for the true visual location of the links in the page. With this approach we cannot distinguish between right or left but we can understand how far down the reader looks at every page before clicking the link. Furthermore, the advantage is the interpretability of this value as opposed to abstract (x,y) pixel coordinates. We can further distinguish between the lead section and the body section of the page as they are always seperated by an empty paragraph in the source code.
 
 Our initial results support our intuition that users prefer links higher on the page and more often in the lead section. We "replay" each game and we keep track of the paragraph chosen at each click. Althought only around 20% of the links are located in the lead section, players prefer them 40% of the time. Similar figures are obtained by looking at each paragraph individually. Please refer to our notebook for more information.
