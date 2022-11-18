@@ -38,8 +38,8 @@ Below you may find our initial research questions that we will explore throughou
 
 
 ## Methods :dart:
-Our initial analysis has been performed in few parts. All the way long, when an incoherence is found in the data, it is cleaned and justify in the code.
-First the importation and shaping of the data into a convenient way (article/categories/links) with panda.
+Our initial analysis has been performed in a few parts. All the way long, when an incoherence is found in the data, it is cleaned and justify in the code.
+First the loading and shaping of the data into a convenient way (article/categories/links) with pandas.
 Some general analysis and visualization about the overall dataset (with panda,numpy):
   - Number of links per articles 
   - Number of articles per categories (a way of classification)
@@ -51,6 +51,9 @@ The overall network analysis (with networkx):
   - The rank of the most clicked articles 
 
 Link position analysis (with BeautifulSoup):
+The visual location of the links in wikipedia articles has been used in the past to study reader preferences. We propose a conceptually simple approach by analysing the paragraph location of the links. The HTML source code of a wikipedia is composed of paragraph elements containing the link elements of the page. We use the paragraph number of the link as an aggregate for the true visual location of the links in the page. With this approach we cannot distinguish between right or left but we can understand how far down the reader looks at every page before clicking the link. Furthermore, the advantage is the interpretability of this value as opposed to abstract (x,y) pixel coordinates. We can further distinguish between the lead section and the body section of the page as they are always seperated by an empty paragraph in the source code.
+
+Our initial results support our intuition that users prefer links higher on the page and more often in the lead section. We "replay" each game and we keep track of the paragraph chosen at each click. Althought only around 20% of the links are located in the lead section, players prefer them 40% of the time. Similar figures are obtained by looking at each paragraph individually.   
 
 
 ## Proposed Timeline :clock8:
