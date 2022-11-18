@@ -39,16 +39,18 @@ TODO
 
 
 ## Proposed Timeline
-Here, we propose an indicative timeline that we will follow through the project.
+Here, we propose an indicative timeline that we will follow through the project. Please note that some project milestones P-MX could be implemented concurently. 
 * P-M1 [Preprocessing]. Enrich initial analysis to get more insights.
     * Date: 18/11/2022 (Milestone P2 Deadline)
 * P-M2 [API]. Delevop a family of functions and routines to ease the analysis of link position. 
     * Date: 02/12/2022 (Along with homework 2, as the workload will be high in this period and we already provide some initial steps about his in our notebook)
-* P-M2 [Data Analysis]. Explore the literature in order to compare the results of our analysis to other research outcomes in this direction.
-    * Proposed deadline: 
-* P-MX [Datastory Draft]. Start creating a template (sketch-like) for the datastory.
-    * Date: 13/12/2022 
-* P-MX [Final Results]. Gather all interesting reseach results, finalize datastory.
+* P-M3 [Data Analysis]. Perform the final analysis for our research questions. Use previous initial analysis to get insights about our goals, implement the analysis in code and provide the first visualizations.
+    * Date: 08/12/2022
+* P-M5 [Literature Comparison & Result Evalution]. Compare the results with existing literature in the field (see [References](#References)). Provide more graphs and update implementations.
+    * Date: 12/12/2022 
+* P-M6 [Datastory Draft and Preparations]. Start creating a template (sketch-like) for the datastory. Finalize all code implementations and decide about the final graphs we will present.
+    * Date: 17/12/2022 
+* P-MX [Final Results]. Gather all information we want to present, polish the repository data, finalize datastory.
     * Date: 23/12/2022 (Milestone P3 Deadline).
 
 
