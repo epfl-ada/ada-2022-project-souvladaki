@@ -1,98 +1,84 @@
-# Does the position of Wikipedia links affect user behavior?
-Exploring Wikipedia links position exploiting user common sense, meaning the human behavior with the goal of reaching a specific article.
+# User navigation and visual link position on Wikipedia: Are they related?
+*Towards understanding user behavior by exploiting the visual position of links in Wikipedia pages*
 
-Henri Allegre (henri.allegre@epfl.ch), Ioannis Bantzis (ioannis.bantzis@epfl.ch), Emmanouil Chatzakis (emmanouil.chatzakis@epfl.ch), Basile Tornare (basile.tornare@epfl.ch)
+*SouvlADAki Team: Henri Allegre (henri.allegre@epfl.ch), Ioannis Bantzis (ioannis.bantzis@epfl.ch), Emmanouil Chatzakis (emmanouil.chatzakis@epfl.ch), Basile Tornare (basile.tornare@epfl.ch)*
 
 This is the proposal of our ADA project, in which we are working on the Wikispeedia dataset. For this milestone we provide:
-- This README as our official project proposal
+- This README as our project proposal
 - The initial_analysis.ipynb which contains our initial analysis steps for the dataset. In the notebook you will find:
     - Code for initial processing of the dataset, data loading and basic analysis
     - Code for graph analytics and visualizations over the Wikispeedia graph
     - Code for path analysis
-    - Preliminary code for our link position ideas.
+    - Code for our visual link position ideas.
 - The wiki_graph.pdf which is the plot of the article network provided by the dataset.
-- The page_pos_dict2.json, which is a dictionary containing the link page structure of each article
-- A folder containing the initial ideas due to the milestone 1.
+- The page_pos_dict.json, which is a dictionary containing the link page structure of each article
+- A folder containing the initial ideas for milestone P1.
 
 This proposal follows the roadmap below:
 * [Abstract](#abstract-closed_book)
 * [Research Questions](#research-questions-question)
 * [Methods](#methods-dart)
-* [Proposed Timeline](#Proposed-Timeline)
-* [Internal Milestones](#Internal-Milestones)
-* [Libraries and Implementation](#Libraries-and-Implementation)
-* [Related Work](#Related-Work)
-* [References](#References)
-
+* [Proposed Timeline](#proposed-timeline-clock8)
+* [Internal Organization](#internal-organization-memo)
+* [Related Work](#related-work-copyright)
+* [References](#references-coffee)
+* [Questions to the TAs](#questions-to-the-tas-postbox)
 
 ## Abstract :closed_book:
-Wikispeedia provides a rich source of information about user navigation over Wikipedia pages. Users have to reach an article from an initial one. A crucial aspect of this procedure is the way of getting there, using the links. The position of the links on each pages seems to have an impact on the human navigation path.
-The most followed links might have a specific position. Does it make them the most followed ones? Does the topic dominate?
+Wikispeedia provides a rich source of information about user navigation over Wikipedia pages. Through Wikispeedia game, users are assigned the task to reach an article from an initial one, just by clicking the article links that may lead them to the final destination. A crucial aspect of this navigation is that the users click on links by thinking which of them are most semantically similar to their goal, using their common sense. In this work, we will study how the visual position of those links in a page affects the decision of the user, and how they impact the outcome of the game. We will provide insights about the positions of the most followed links and we will compare our findings with the user navigation knowledge that already exists in literature. We will create our datastory with emphasis on the statistical findings of the link position and human behavior and on the comparison of those results with the pre-existing knowledge in the field of user navigation. 
 
-The comparison with what already exists about the general visual link analysis over Wikipedia is needed. As it's already implemented in literature and the comparison with the graph analytics insights (e.g. if the popular links from Wikipedia belong to the most clicked positions of the page) will be performed.
-
-The emphasis of our datastory will be on the importance of the position of a link in a page, and provide insight on how it affects the user behavior.
+*Keywords: Wikipedia, Wikidata, User Navigation, Visual Link Position, Graph Analytics*
 
 
 ## Research Questions :question:
 Below you may find our initial research questions that we will explore throughout our project.
-- How does the position of links in the HTML page of Wikipedia affects the user behavior?
-- Are there specific sections that their links are generally prefered?
+- How does the position of links in the HTML page of Wikipedia affects the user behavior/selection?
+- Are there specific sections that their links are preferred from users when navigating the graph?
 - Are the results of visual link analysis on Wikispeedia (which is based on human behavior) similar or different with the ones already observed in the literature?
-- How are our results on visual link analysis compared to graph analytics over our data? Are the links that belong to the most "clicked" sections of the page also important in terms of graph analysis?
+- How our results on visual link analysis compare to analytics over the graph? Are the links that belong to the most "clicked" sections of the page also important in terms of graph analysis?
 
 
 ## Methods :dart:
-Our initial analysis has been performed in a few parts. All the way long, when an incoherence is found in the data, it is cleaned and justify in the code.
-First the loading and shaping of the data into a convenient way (article/categories/links) with pandas.
-Some general analysis and visualization about the overall dataset (with panda,numpy):
-  - Number of links per articles
-  - Number of articles per categories (a way of classification)
+Our initial analysis has been performed in a few parts. In our notebook, we justify how we preprocessed and cleaned the data.
+After the preprocessing and shaping of the data we performed some **preliminary analysis** routines (using pandas, numpy, matplotlib), calculating:
+  - Number of links per article
+  - Number of articles per category
   - Path analysis ((un)-finished paths)
-  - Time duration distribution per game
+  - Time duration comparison per game for finished and unfinished paths
+  - Comparison of backtracks between finished and unfinished paths
 
-The overall network analysis (with networkx):
-  - The raw network map of wikispeedia (need to be clearer asap)
-  - The rank of the most clicked articles
+We experimented with a **wikipedia graph analysis** (using networkx):
+  - We visualized the dense Wikispeedia network 
+  - We simulated multiple graph analytics algorithms over the graph (Pagerank, Clustering Coef., Eigenvector Centrality)
 
-Link position analysis (with BeautifulSoup):
+We contucted a **link position analysis** (using BeautifulSoup):
 The visual location of the links in wikipedia articles has been used in the past to study reader preferences. We propose a conceptually simple approach by analysing the paragraph location of the links. The HTML source code of a wikipedia is composed of paragraph elements containing the link elements of the page. We use the paragraph number of the link as an aggregate for the true visual location of the links in the page. With this approach we cannot distinguish between right or left but we can understand how far down the reader looks at every page before clicking the link. Furthermore, the advantage is the interpretability of this value as opposed to abstract (x,y) pixel coordinates. We can further distinguish between the lead section and the body section of the page as they are always seperated by an empty paragraph in the source code.
 
-Our initial results support our intuition that users prefer links higher on the page and more often in the lead section. We "replay" each game and we keep track of the paragraph chosen at each click. Althought only around 20% of the links are located in the lead section, players prefer them 40% of the time. Similar figures are obtained by looking at each paragraph individually.   
+Our initial results support our intuition that users prefer links higher on the page and more often in the lead section. We "replay" each game and we keep track of the paragraph chosen at each click. Althought only around 20% of the links are located in the lead section, players prefer them 40% of the time. Similar figures are obtained by looking at each paragraph individually. Please refer to our notebook for more information.
 
 
 ## Proposed Timeline :clock8:
 Here, we propose an indicative timeline that we will follow through the project. Please note that some project milestones P-MX could be implemented concurently.
 * P-M1 [Preprocessing]. Enrich initial analysis to get more insights.
     * Date: 18/11/2022 (Milestone P2 Deadline)
-* P-M2 [API]. Delevop a family of functions and routines to ease the analysis of link position.
-    * Date: 02/12/2022 (Along with homework 2, as the some initial steps are already been perfomed here)
-* P-M3 [Data Analysis]. Perform the final analysis for our research questions. Use previous initial analysis to get insights about our goals, implement the analysis in code and provide the first visualizations.
+* P-M2 [Preliminary Link Position Analysis]. Complete the preliminary link position analysis to summarize the first insights.
+    * Date: 02/12/2022 (Along with homework 2, as many steps are already completed)
+* P-M3 [Data Analysis]. Perform the link prediction analysis for our research questions. Use previous results to get insights about our goals, implement the programming part and provide the first visualizations.
     * Date: 08/12/2022
-* P-M5 [Literature Comparison & Result Evalution]. Compare the results with existing literature in the field (see [References](#References)). Provide more graphs and update implementations.
+* P-M5 [Literature Comparison & Result Evalution]. Compare the results with existing literature in the field (see [References](#References)). Provide more graphs and update implementations. Also evaluate the comparison with graph analytics.
     * Date: 12/12/2022
 * P-M6 [Datastory Draft and Preparations]. Start creating a template (sketch-like) for the datastory. Finalize all code implementations and decide about the final graphs we will present.
     * Date: 17/12/2022
-* P-M7 [Final Results]. Gather all information we want to present, polish the repository data, finalize datastory.
+* P-M7 [Final Results]. Gather the selected information and results for presentation, polish the repository data, finalize datastory.
     * Date: 23/12/2022 (Milestone P3 Deadline).
 
 
 ## Internal Organization :memo:
-Our team meets up to coordinate and synchronize, so that every member is aware of the different
-aspects of our project, but every teammate is assigned specific parts of the work.
+Here, we describe our internal organization. Our team meets up to coordinate and synchronize, so that every member is aware of the different aspects and components of our project, but every teammate is assigned specific parts of the work.
 - Henri: Visualizations, Graph analytics classification
 - Ioannis: Code maintenance, Visualizations
-- Manos: Code maintenance, Website, Datastory
-- Basile: Website, Visualizations, Datastory
-All members contributed to the initial analysis steps.
-
-
-## Libraries and Implementation :telescope:
-The project will be implemented in Python, using the following (indicative) packages.
-* Pandas and Numpy: For data analysis
-* Matplotlib and Seaborn: For visualizations
-* Networkx: For network analysis
-* BeatifulSoup: For HTML page analysis and link position
+- Manos: Code maintenance, Website for Datastory
+- Basile: Code maintenance, Website for Datastory, Visualizations, Datastory
 
 
 ## Related Work :copyright:
@@ -100,11 +86,11 @@ We are aware of the related work about studying the page structure of Wikipedia 
 
 
 ## References :coffee:
-* Dimitrov, Dimitar, et al. "Visual positions of links and clicks on wikipedia." Proceedings of the 25th International Conference Companion on World Wide Web. 2016.
-* Dimitrov, Dimitar, et al. "What makes a link successful on wikipedia?." Proceedings of the 26th International Conference on World Wide Web. 2017.
-* West, Robert, Joelle Pineau, and Doina Precup. "Wikispeedia: An online game for inferring semantic distances between concepts." Twenty-First International Joint Conference on Artificial Intelligence. 2009.
-* Leskovec, Jure. "Human wayfinding in information networks." In WWW-12. 2012.
-* Daniel Lamprecht, Dimitar Dimitrov, Denis Helic, and Markus Strohmaier."Evaluating and Improving Navigability of Wikipedia: A Comparative Study of Eight Language Editions." 2016.
+1. Dimitrov, Dimitar, et al. "Visual positions of links and clicks on wikipedia." Proceedings of the 25th International Conference Companion on World Wide Web. 2016.
+2. Dimitrov, Dimitar, et al. "What makes a link successful on wikipedia?." Proceedings of the 26th International Conference on World Wide Web. 2017.
+3. West, Robert, Joelle Pineau, and Doina Precup. "Wikispeedia: An online game for inferring semantic distances between concepts." Twenty-First International Joint Conference on Artificial Intelligence. 2009.
+4. Leskovec, Jure. "Human wayfinding in information networks." In WWW-12. 2012.
+5.  Daniel Lamprecht, Dimitar Dimitrov, Denis Helic, and Markus Strohmaier."Evaluating and Improving Navigability of Wikipedia: A Comparative Study of Eight Language Editions." 2016.
 
 ## Questions to the TAs :postbox:
-* Throughout our work we may encounter results that could provide more insights about our research questions. Can we modify our proposal according to those new results throughout the duration of the project ?
+* Throughout our work we may encounter results that could provide more insights about our research questions. Can we modify our proposal according to those new results throughout the duration of the project?
