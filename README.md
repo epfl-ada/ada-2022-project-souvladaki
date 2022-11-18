@@ -1,5 +1,5 @@
 # Does the position of Wikipedia links affect user behavior?
-Exploring Wikipedia links position exploiting user common sense.
+Exploring Wikipedia links position exploiting user common sense, meaning the human behavior with the goal of reaching a specific article.
 
 Henri Allegre (henri.allegre@epfl.ch), Ioannis Bantzis (ioannis.bantzis@epfl.ch), Emmanouil Chatzakis (emmanouil.chatzakis@epfl.ch), Basile Tornare (basile.tornare@epfl.ch)
 
@@ -10,6 +10,9 @@ This is the proposal of our ADA project, in which we are working on the Wikispee
     - Code for graph analytics and visualizations over the Wikispeedia graph
     - Code for path analysis
     - Preliminary code for our link position ideas.
+- The wiki_graph.pdf which is the plot of the article network provided by the dataset.
+- The page_pos_dict2.json, which is a dictionary containing the link page structure of each article
+- A folder containing the initial ideas due to the milestone 1.
 
 This proposal follows the roadmap below:
 * [Abstract](#abstract-closed_book)
@@ -29,13 +32,25 @@ Wikispeedia provides a rich source of information about user navigation over Wik
 ## Research Questions :question:
 Below you may find our initial research questions that we will explore throughout our project.
 - How does the position of links in the HTML page of Wikipedia affects the user behavior?
-- Are there specific sections that their links are generally preffered? 
+- Are there specific sections that their links are generally prefered? 
 - Are the results of visual link analysis on Wikispeedia (which is based on common sense) similar or different with the ones already observed in the literature? 
 - How are our results on visual link analysis compared to graph analytics over our data? Are the links that belong to the most "clicked" sections of the page also important in terms of graph analysis? 
 
 
 ## Methods :dart:
-TODO
+Our initial analysis has been performed in few parts. All the way long, when an incoherence is found in the data, it is cleaned and justify in the code.
+First the importation and shaping of the data into a convenient way (article/categories/links) with panda.
+Some general analysis and visualization about the overall dataset (with panda,numpy):
+  - Number of links per articles 
+  - Number of articles per categories (a way of classification)
+  - Path analysis ((un)-finished paths) 
+  - Time duration distribution per game
+
+The overall network analysis (with networkx):
+  - The raw network map of wikispeedia (need to be clearer asap)
+  - The rank of the most clicked articles 
+
+Link position analysis (with BeautifulSoup):
 
 
 ## Proposed Timeline :clock8:
@@ -68,7 +83,7 @@ All members contributed to the initial analysis steps.
 The project will be implemented in Python, using the following (indicative) packages.
 * Pandas and Numpy: For data analysis
 * Matplotlib and Seaborn: For visualizations
-* Networkx: For graph analytics
+* Networkx: For network analysis
 * BeatifulSoup: For HTML page analysis and link position
 
 
