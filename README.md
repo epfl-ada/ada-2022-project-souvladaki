@@ -13,8 +13,13 @@ This is the final report of our ADA project, in which we are working on the Wiki
 
 Our datastory is available [here](https://yannisban.github.io/wikispeedia-link-position/)
 
+Changelog:
+- Updated minor differences for the final project report
+- Added specific roles to each team member
+- Added the URL for the datastory
+- Updated the analysis notebook with new work
 
-This proposal follows the roadmap below:
+Roadmap:
 * [Abstract](#abstract-closed_book)
 * [Research Questions](#research-questions-question)
 * [Methods](#methods-dart)
@@ -81,7 +86,7 @@ Here, we describe our internal organization. Our team meets up to coordinate and
 
 
 ## Related Work :copyright:
-We are aware of the related work about studying the page structure of Wikipedia in order to determine the position of the links that users are most likely to follow (see [References](#References)). This work mainly consists of data gathered from users that "free browse" Wikipedia pages, without the aim of reaching a final target, and the users click on pages that they find interesting in general. We differ from this because our data come from users that click on pages that might lead them to their goal, exploiting their common sense about pages that are semantically similar to the final destination. This notion of semantic similarity between pages in not captured by previous work. An interesting aspect of our project would be to compare the existing results in the literature with our results, which will include the common sense knowledge from Wikispeedia.
+We are aware of the related work about studying the page structure of Wikipedia in order to determine the position of the links that users are most likely to follow (see [References](#References)). This work mainly consists of data gathered from users that "free browse" Wikipedia pages, without the aim of reaching a final target, and the users click on pages that they find interesting in general. We differ from this because our data come from users that click on pages that might lead them to their goal, exploiting their common sense about pages that are semantically similar to the final destination. This notion of semantic similarity between pages in not captured by previous work. An interesting aspect of our project would be to compare the existing results in the literature with our results, which will include the common sense knowledge from Wikispeedia (more on this in the datastory).
 
 
 ## References :coffee:
