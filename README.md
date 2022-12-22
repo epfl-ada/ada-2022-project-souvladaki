@@ -1,18 +1,19 @@
-# User navigation and visual link position on Wikipedia: Are they related?
-*Towards understanding user behavior by exploiting the visual position of links in Wikipedia pages*
+# Wikipedia visual link position and user navigation
+*Understanding user behavior by exploiting the visual position of links in Wikipedia pages*
 
 *SouvlADAki Team: Henri Allegre (henri.allegre@epfl.ch), Ioannis Bantzis (ioannis.bantzis@epfl.ch), Emmanouil Chatzakis (emmanouil.chatzakis@epfl.ch), Basile Tornare (basile.tornare@epfl.ch)*
 
 This is the proposal of our ADA project, in which we are working on the Wikispeedia dataset. For this milestone we provide:
 - This README as our project proposal
-- The initial_analysis.ipynb which contains our initial analysis steps for the dataset. In the notebook you will find:
+- The analysis.ipynb which contains our analysis steps for the dataset. In the notebook you will find:
     - Code for initial processing of the dataset, data loading and basic analysis
     - Code for graph analytics and visualizations over the Wikispeedia graph
     - Code for path analysis
-    - Code for our visual link position ideas.
-- The wiki_graph.pdf which is the plot of the article network provided by the dataset.
-- The page_pos_dict.json, which is a dictionary containing the link page structure of each article
-- A folder containing the initial ideas for milestone P1.
+    - Code for our visual link position, with all the graphs that are present in the datastory.
+
+You may find our datastory by following the following URL:
+https://yannisban.github.io/wikispeedia-link-position/ 
+
 
 This proposal follows the roadmap below:
 * [Abstract](#abstract-closed_book)
@@ -35,7 +36,6 @@ Below you may find our initial research questions that we will explore throughou
 - How does the position of links in the HTML page of Wikipedia affects the user behavior/selection?
 - Are there specific sections in which their links are preferred by users when navigating the graph?
 - Are the results of visual link analysis on Wikispeedia (which is based on human behavior) similar or different with the ones already observed in the literature?
-- How our results on visual link analysis compare to analytics over the graph? Are the links that belong to the most "clicked" sections of the page also important in terms of graph analysis?
 
 
 ## Methods :dart:
@@ -75,10 +75,10 @@ Here, we propose an indicative timeline that we will follow through the project.
 
 ## Internal Organization :memo:
 Here, we describe our internal organization. Our team meets up to coordinate and synchronize, so that every member is aware of the different aspects and components of our project, but every teammate is assigned specific parts of the work.
-- Henri: Visualizations, Graph analytics classification
-- Ioannis: Code maintenance, Visualizations
-- Manos: Code maintenance, Website for Datastory
-- Basile: Code maintenance, Website for Datastory, Visualizations, Datastory
+- Henri: Datastory, Graph clustering visualization
+- Ioannis: Datastory, Visual link position analysis and final graphs
+- Manos: Datastory, Graph analysis and paths code
+- Basile: Datastory, paths code
 
 
 ## Related Work :copyright:
@@ -91,6 +91,3 @@ We are aware of the related work about studying the page structure of Wikipedia 
 3. West, Robert, Joelle Pineau, and Doina Precup. "Wikispeedia: An online game for inferring semantic distances between concepts." Twenty-First International Joint Conference on Artificial Intelligence. 2009.
 4. Leskovec, Jure. "Human wayfinding in information networks." In WWW-12. 2012.
 5.  Daniel Lamprecht, Dimitar Dimitrov, Denis Helic, and Markus Strohmaier."Evaluating and Improving Navigability of Wikipedia: A Comparative Study of Eight Language Editions." 2016.
-
-## Questions to the TAs :postbox:
-* Throughout our work we may encounter results that could provide more insights about our research questions. Can we modify our proposal according to those new results throughout the duration of the project?
