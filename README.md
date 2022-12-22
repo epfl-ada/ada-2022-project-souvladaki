@@ -27,7 +27,6 @@ Roadmap:
 * [Internal Organization](#internal-organization-memo)
 * [Related Work](#related-work-copyright)
 * [References](#references-coffee)
-* [Questions to the TAs](#questions-to-the-tas-postbox)
 
 ## Abstract :closed_book:
 Wikispeedia provides a rich source of information about user navigation over Wikipedia pages. In the Wikispeedia game, users are assigned the task of reaching a given target article from a given source article, exclusively by clicking the links that they encounter at each article. A crucial aspect of this navigation is that the users click on links by thinking which of them are the most semantically similar to their goal, using their common sense. In this work, we will study how the visual position of those links in a page affects the decision of the user, and how they impact the outcome of the game. We will provide insights about the positions of the most followed links and we will compare our findings with the user navigation knowledge that already exists in the literature. We will create our datastory with an emphasis on the statistical findings of the link position and human behavior and on the comparison of those results with the pre-existing knowledge in the field of user navigation. 
