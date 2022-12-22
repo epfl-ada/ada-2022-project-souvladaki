@@ -11,7 +11,7 @@ This is the final report of our ADA project, in which we are working on the Wiki
     - Code for path analysis
     - Code for our visual link position, with all the graphs that are present in the datastory.
 
-Our datastory is available [here](https://yannisban.github.io/wikispeedia-link-position/)
+Our datastory is available [here](https://yannisban.github.io/wikispeedia-link-position/).
 
 Changelog:
 - Updated minor differences for the final project report
