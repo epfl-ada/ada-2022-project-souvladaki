@@ -3,16 +3,15 @@
 
 *SouvlADAki Team: Henri Allegre (henri.allegre@epfl.ch), Ioannis Bantzis (ioannis.bantzis@epfl.ch), Emmanouil Chatzakis (emmanouil.chatzakis@epfl.ch), Basile Tornare (basile.tornare@epfl.ch)*
 
-This is the proposal of our ADA project, in which we are working on the Wikispeedia dataset. For this milestone we provide:
-- This README as our project proposal
+This is the final report of our ADA project, in which we are working on the Wikispeedia dataset. For this milestone we provide:
+- This README as our project report
 - The analysis.ipynb which contains our analysis steps for the dataset. In the notebook you will find:
     - Code for initial processing of the dataset, data loading and basic analysis
     - Code for graph analytics and visualizations over the Wikispeedia graph
     - Code for path analysis
     - Code for our visual link position, with all the graphs that are present in the datastory.
 
-You may find our datastory by following the following URL:
-https://yannisban.github.io/wikispeedia-link-position/ 
+Our datastory is available [here](https://yannisban.github.io/wikispeedia-link-position/)
 
 
 This proposal follows the roadmap below:
