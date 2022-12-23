@@ -81,7 +81,7 @@ Here, we describe our internal organization. Our team meets up to coordinate and
 - Henri: Datastory, Graph clustering visualization
 - Ioannis: Datastory, Visual link position analysis and final graphs
 - Manos: Datastory, Graph analysis and paths code
-- Basile: Datastory, paths code
+- Basile: Datastory, Design website, paths code
 
 
 ## Related Work :copyright:
